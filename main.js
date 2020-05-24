@@ -88,17 +88,15 @@ function cityFunction() {
       locationTimezone.textContent = location;
       iconDiv.style.content = `url("http://openweathermap.org/img/wn/${icon}@4x.png")`;
 
+      temperatureSpan.textContent = '°C';
+
       //formula for celsius
       let fahrenheit = temperature * (9 / 5) + 32;
 
       // change celsius to fahrenheit on click
       // temperatureSection.removeEventListener('click', eventFunction);
-      const hasEventlistener = false;
 
-      if (!hasEventlistener) {
-        temperatureSection.addEventListener('click', eventFunction);
-        hasEventlistener = true;
-      }
+      temperatureSection.addEventListener('click', eventFunction);
 
       function eventFunction() {
         if (temperatureSpan.textContent === '°C') {
