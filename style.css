@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: white;
+}
+
+.localsection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+
+  color: white;
+}
+
+.citydiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(rgb(154, 29, 185), rgb(146, 50, 50));
+
+  color: white;
+}
+
+.citydiv h1 {
+  font-size: 36px;
+}
+
+.location,
+.temperature,
+.city-location,
+.city-temperature {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature,
+.city-temperature {
+  flex-direction: column;
+}
+
+.degree-section,
+.city-degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.degree-section span,
+.city-degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2,
+.city-degree-section h2 {
+  font-size: 40px;
+}
+
+.city-title,
+.inputdiv {
+  margin-top: 60px;
+}
+
+#input,
+#inputbtn {
+  font-size: 18px;
+}
+
+#input {
+  text-align: center;
+}
+
+#inputbtn {
+  padding: 4px 8px;
+}
